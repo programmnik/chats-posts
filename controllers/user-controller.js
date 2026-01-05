@@ -41,7 +41,7 @@ const UserController = {
         }
         catch(error){
             console.log('Error in register ', error);
-            res.status(500).json({error: 'Internal server error'});
+            return res.status(500).json({error: 'Internal server error'});
         }
     },
     login: async (req, res)=>{
